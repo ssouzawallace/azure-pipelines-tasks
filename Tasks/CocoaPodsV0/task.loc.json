@@ -57,6 +57,24 @@
       "required": false,
       "helpMarkDown": "ms-resource:loc.input.help.projectDirectory",
       "groupName": "advanced"
+    },
+    {
+      "name": "specRepoName",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.specRepoName",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.specRepoName",
+      "groupName": "advanced"
+    },
+    {
+      "name": "specRepoUrl",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.specRepoUrl",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.specRepoUrl",
+      "groupName": "advanced"
     }
   ],
   "execution": {
