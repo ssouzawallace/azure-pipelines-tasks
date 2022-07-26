@@ -57,6 +57,24 @@
             "required": false,
             "helpMarkDown": "Optionally specify the path to the root of the project directory. If left empty, the project specified in the Podfile will be used. If no project is specified, then a search for an Xcode project will be made. If more than one Xcode project is found, an error will occur.",
             "groupName": "advanced"
+        },
+        {
+            "name": "specRepoName",
+            "type": "string",
+            "label": "Private Spec Repo Name",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "Optionally specify the REPO_NAME to work with your collection of private pods. If left empty, no Private Spec Repo will be added to your CocoaPods installation.",
+            "groupName": "advanced"
+        },
+        {
+            "name": "specRepoUrl",
+            "type": "filePath",
+            "label": "Private Spec Repo Source Url",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "Optionally specify the SOURCE_URL to work with your collection of private pods. If left empty, no Private Spec Repo will be added to your CocoaPods installation.",
+            "groupName": "advanced"
         }
     ],
     "execution": {
@@ -77,6 +95,7 @@
         "PodReturnCode": "The 'pod' command exited with return code: %d",
         "PodFailed": "The 'pod' command failed with error: %s",
         "CocoaPodsNotFound": "The 'pod' command was not found. Please install CocoaPods on the agent machine (https://cocoapods.org/).",
-        "ProxyConfig": "Proxy configuration detected. Using proxy host: %s"
+        "ProxyConfig": "Proxy configuration detected. Using proxy host: %s",
+        "PrivateSpecRepo": "When using a Private Spec Repo, both Repo Name and Repo Source Url must be set"
     }
 }
